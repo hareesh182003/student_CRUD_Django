@@ -1,0 +1,155 @@
+body {
+    background-color: #1a1a2e; /* Dark blue background */
+}
+
+/* Card Styling */
+.card {
+    background: linear-gradient(135deg, #3e4451, #2c3e50);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.6), 0 8px 25px rgba(0, 198, 255, 0.4);
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #f9a825; /* Yellow header text */
+}
+
+/* Styling for H1 Header */
+.text-white {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hover Effect for H1 Header */
+.text-white:hover {
+    color: #6a11cb;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #6a11cb, 0 0 15px #2575fc, 0 0 20px #00c6ff;
+    transform: scale(1.05);
+}
+
+
+/* Styling for Form Input Fields */
+.form-control, .form-select {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border: 1px solid #6a11cb;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect for Form Fields */
+.form-control:hover, .form-select:hover {
+    border-color: #00c6ff;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.5), 0 0 15px rgba(0, 198, 255, 0.5);
+}
+
+/* Focus Effect for Form Fields */
+.form-control:focus, .form-select:focus {
+    background-color: #3a3d4a;
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.6), 0 0 20px rgba(37, 117, 252, 0.6);
+    outline: none;
+}
+
+/* Glitter Effect Overlay */
+.form-control::before, .form-select::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 20%);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.form-control:hover::before, .form-select:hover::before {
+    opacity: 0.5;
+    transform: translate(50%, 50%);
+}
+
+/* Label Styling */
+.form-label {
+    color: #f0f0f0;
+    transition: color 0.3s;
+}
+
+.form-control:hover ~ .form-label, .form-select:hover ~ .form-label {
+    color: #00c6ff;
+}
+
+
+
+
+/* Button Styling */
+.button-color {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Glitter effect on hover */
+.button-color:hover {
+    background: linear-gradient(45deg, #6a11cb, #00c6ff);
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #6a11cb, 0 0 40px #2575fc;
+}
+
+/* Butterfly effect on click */
+.button-color:active {
+    transform: scale(1.1) rotate(-5deg);
+    transition: 0.1s ease;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff7eb3, 0 0 40px #ff758c;
+}
+
+/* Cursor style and animations */
+.button-color:hover {
+    cursor: pointer;
+}
+
+.button-color::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 20%);
+    opacity: 0.5;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.button-color:hover::before {
+    opacity: 1;
+    transform: translate(50%, 50%);
+}

@@ -1,0 +1,92 @@
+/* Body Background Styling */
+body {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a); /* Darker gradient background */
+    color: #e0e0e0; /* Lighter text for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container for the Table */
+.container-fluid {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Table Styling */
+.table {
+    color: #f0f0f0; /* Light text for contrast */
+    background-color: #0f0f0f; /* Very dark background for table */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Table Header Styling */
+.table thead {
+    background: linear-gradient(45deg, #202124, #3a3b3c); /* Darker gradient for header */
+    color: #ffffff;
+}
+
+.table th {
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease; /* Add transition for smooth effect */
+}
+
+/* Header Hover Effect */
+.table th:hover {
+    background-color: #3a3b3c; /* Lighter dark color for hover effect */
+    transform: scale(1.05); /* Slightly scale up */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glow effect */
+    color: white;
+}
+
+/* Table Row and Cell Styling */
+.table tbody tr {
+    transition: background 0.3s ease;
+}
+
+.table td {
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid #202124;
+}
+
+/* Row Hover Effect */
+.table tbody tr:hover {
+    background-color: #282828; /* Slightly lighter dark color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+/* Alternating Row Colors */
+.table tbody tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #111111;
+}
+
+/* Table Cell Hover Effect */
+.table td:hover {
+    color: #e8bb1b; /* Bright cyan for hover text */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Responsive Table Styling */
+@media (max-width: 768px) {
+    .table th, .table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
